@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--
+	This is a configuration file for navigation menu. You can add/remove/modify menu items as you need.
+	Important: each of these 4 arrays below must contain the same number of items.
+	-->
+
+	<!-- List of titles in navigation drawer menu -->
+	<string-array name="navigation_title_list">
+		<item>Home</item>
+		<!--		<item>Our Products</item>
+                <item>References</item>
+                <item>Support</item>
+                <item>About Us</item>-->
+		<!--<item>Profile</item>-->
+		<!--<item>Photo</item>-->
+		<item>Logout</item>
+	</string-array>
+
+	<!--
+	List of webview URLs. You can specify URL link to a web page on the Internet or
+	URL link to a local page stored in assets directory. Local page does not require Internet connection.
+	URL to the local page must be in this format: file:///android_asset/example.html
+	-->
+	<string-array name="navigation_url_list">
+		<item>http://www.progress.photos</item>
+		<!--		<item>http://mock.robotemplates.com/webviewapp/products.html</item>
+                <item>http://mock.robotemplates.com/webviewapp/references.html</item>
+                <item>http://mock.robotemplates.com/webviewapp/support.html</item>
+                <item>http://mock.robotemplates.com/webviewapp/about.html</item>-->
+		<!--<item>http://www.progress.photos/profile</item>-->
+		<!--<item>http://www.progress.photos/file/add</item>-->
+		<item>http://www.progress.photos/action/logout</item>
+	</string-array>
+
+	<!-- List of icons in navigation drawer menu -->
+	<string-array name="navigation_icon_list">
+		<item>@drawable/ic_drawer_home</item>
+		<!--		<item>@drawable/ic_drawer_products</item>
+                <item>@drawable/ic_drawer_references</item>
+                <item>@drawable/ic_drawer_support</item>
+                <item>@drawable/ic_drawer_about</item>-->
+		<!--<item>@drawable/ic_drawer_user</item>-->
+		<!--<item>@drawable/ic_drawer_photo</item>-->
+		<item>@drawable/ic_drawer_key</item>
+	</string-array>
+
+	<!--
+	List of share messages. Each webview page can be shared via e-mail, sms, social networks etc.
+	Share button is in the action bar. You can specify a message which gonna be posted.
+	If you don't want to share the page, keep the item empty.
+	-->
+	<string-array name="navigation_share_list">
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<!--<item>See this link http://mock.robotemplates.com/webviewapp/contact.html</item>-->
+	</string-array>
+</resources>

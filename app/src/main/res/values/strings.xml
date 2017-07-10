@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- LANGUAGE INDEPENDENT -->
+	<string name="app_name">Progress Photos</string>
+
+	<!-- LANGUAGE DEPENDENT -->
+	<string name="global_offline_toast">No Internet connection available</string>
+
+	<string name="menu_share">Share</string>
+
+	<string name="drawer_open">Open navigation drawer</string>
+	<string name="drawer_close">Close navigation drawer</string>
+
+	<string name="placeholder_empty">Not found</string>
+	<string name="placeholder_offline">No Internet connection available</string>
+
+	<string name="fragment_main_downloading">Downloading…</string>
+</resources>

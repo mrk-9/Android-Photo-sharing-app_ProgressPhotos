@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.progress.photos"
+	android:installLocation="auto">
+	
+	<!-- versionCode, versionName, minSdkVersion, targetSdkVersion properties are set via Gradle script -->
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<!-- permissions for push notifications, uncomment if you want to use push notifications -->
+	<!--
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<permission android:protectionLevel="signature" android:name="com.progress.photos.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.progress.photos.permission.C2D_MESSAGE" />
+	-->
+
+	<!--
+	You can easily change the main theme. Just modify application.android:theme attribute.
+	There are 10 themes you can use:
+		Theme.WebViewApp.Blue
+		Theme.WebViewApp.Brown
+		Theme.WebViewApp.Gray
+		Theme.WebViewApp.Green
+		Theme.WebViewApp.Lime
+		Theme.WebViewApp.Orange
+		Theme.WebViewApp.Purple
+		Theme.WebViewApp.Red
+		Theme.WebViewApp.Teal
+		Theme.WebViewApp.Violet
+	-->
+
+	<application
+		android:name=".WebViewAppApplication"
+		android:icon="@mipmap/ic_launcher"
+		android:logo="@drawable/logo"
+		android:label="@string/app_name"
+		android:theme="@style/Theme.WebViewApp.Teal"
+		android:hardwareAccelerated="true"
+		android:allowBackup="true">
+
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/analytics_global_tracker" />
+
+		<activity
+			android:name="com.progress.photos.activity.MainActivity"
+			android:label="@string/app_name"
+			android:launchMode="standard"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:host="www.progress.photos" android:scheme="http"></data>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name="com.google.android.gms.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode|smallestScreenSize" />
+
+		<!-- service and receivers for push notifications, uncomment if you want to use push notifications -->
+		<!--
+		<service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.USER_PRESENT" />
+			</intent-filter>
+		</receiver>
+		<receiver
+			android:name="com.parse.ParsePushBroadcastReceiver"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="com.parse.push.intent.RECEIVE" />
+				<action android:name="com.parse.push.intent.DELETE" />
+				<action android:name="com.parse.push.intent.OPEN" />
+			</intent-filter>
+		</receiver>
+		<receiver
+			android:name="com.parse.GcmBroadcastReceiver"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="com.progress.photos" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_stat_notify" />
+		-->
+
+	</application>
+</manifest>

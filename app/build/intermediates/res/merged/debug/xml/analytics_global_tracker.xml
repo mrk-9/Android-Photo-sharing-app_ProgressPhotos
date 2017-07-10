@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+	<string name="ga_logLevel">verbose</string> <!-- The local LogLevel for Analytics -->
+	<integer name="ga_dispatchPeriod">30</integer> <!-- How often the dispatcher should fire -->
+	<bool name="ga_dryRun">false</bool> <!-- Treat events as test events and don't send to google -->
+	<string name="com.progress.photos.activity.MainActivity">Main Activity</string> <!-- The screen names that will appear in reports -->
+</resources>

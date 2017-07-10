@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/res/drawable-tvdpi/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/res/drawable-tvdpi/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/res/drawable-tvdpi/ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/res/drawable-tvdpi/ic_plusone_medium_off_client.png"
+    }
+]

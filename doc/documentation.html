@@ -1,0 +1,261 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>WebView App Documentation</title><style></style></head><body>
+<h1 id="webview-app-documentation">WebView App Documentation</h1>
+<p>This is a documentation for WebView App created by <a href="http://robotemplates.com/">Robo Templates</a>. WebView App is a native Android application. You can find here useful info about configuring, customizing, building and publishing the app.</p>
+<ul>
+<li><a href="http://codecanyon.net/item/universal-android-webview-app/8431507">WebView App on Codecanyon</a></li>
+<li><a href="https://www.youtube.com/watch?v=GaOJu7elxCA">Video manual on YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=mcEXzYXvC94">Video preview on YouTube</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.robotemplates.webviewapp">Live demo on Google Play</a></li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>Support for Gingerbread (Android 2.3.3) and newer</li>
+<li>Developed with Android Studio &amp; Gradle</li>
+<li>Material design following Android Design Guidelines</li>
+<li>Ten color themes (blue, brown, gray, green, lime, orange, purple, red, teal, violet)</li>
+<li>Thirty menu icons</li>
+<li>Action bar</li>
+<li>Navigation drawer menu (easily customizable)</li>
+<li>Pull-to-Refresh</li>
+<li>Share dialog</li>
+<li>Intents (e-mail, sms, phone call, map, store)</li>
+<li>Download manager</li>
+<li>File picker for uploading files</li>
+<li>WebView supports JavaScript, Cookies, CSS, images, videos and other standard web tools and technologies</li>
+<li>HTML5 videos, YouTube, Vimeo</li>
+<li>Support for opening links in external browser (customizable rules)</li>
+<li>Local pages (available in offline)</li>
+<li>Error handling</li>
+<li>Offline handling</li>
+<li>Progress bar when loading the page</li>
+<li>Google Analytics</li>
+<li>AdMob</li>
+<li>Push notifications (Parse)</li>
+<li>Responsive design (portrait, landscape, handling orientation change)</li>
+<li>Support for high-resolution displays (xxhdpi)</li>
+<li>Multi-language support</li>
+<li>Possibility to build the project without Android Studio / Eclipse (using Gradle &amp; Android SDK)</li>
+<li>Easy configuration</li>
+<li>Well documented</li>
+<li>Top quality clean code created by experienced senior Android developer</li>
+<li>Free support</li>
+</ul>
+<h2 id="android-sdk-android-studio">Android SDK &amp; Android Studio</h2>
+<p>This chapter describes how to install Android SDK and Android Studio. You don&#39;t have to install Android Studio, but it&#39;s better. The project can be built without Android Studio, using Gradle and Android SDK. Gradle is a build system used for building final APK file.</p>
+<ol>
+<li>Install <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JDK</a></li>
+<li>Install <a href="https://developer.android.com/sdk/index.html">Android SDK</a></li>
+<li>Run Android SDK Manager and <a href="https://developer.android.com/sdk/installing/adding-packages.html">download necessary SDK packages</a>, make sure that you have installed Android SDK Tools, Android SDK Platform-tools, Android SDK Build-tools, Android Support Repository, Android Support Library and Google Play services</li>
+<li>Install <a href="https://developer.android.com/sdk/index.html">Android Studio</a></li>
+<li>Now you should be able to open/edit the Android project and build APK</li>
+<li>You can also install <a href="http://www.genymotion.com/">Genymotion</a> - fast Android emulator</li>
+</ol>
+<h2 id="project-structure">Project structure</h2>
+<p>Project has the following structure (directories are marked by square braces):</p>
+<ul>
+<li>[app] - main module</li>
+<li>[app]/[libs] - contains 3rd party libraries (not used)</li>
+<li>[app]/[src] - contains source code</li>
+<li>[app]/[src]/[main]</li>
+<li>[app]/[src]/[main]/[assets] - asset files (local html pages)</li>
+<li>[app]/[src]/[main]/[java] - java sources</li>
+<li>[app]/[src]/[main]/[res] - xml resources, drawables</li>
+<li>[app]/[src]/[main]/AndroidManifest.xml - manifest file</li>
+<li>[app]/build.gradle - main build script</li>
+<li>[app]/proguard-rules.pro - Proguard config (not used)</li>
+<li>[doc] - documentation</li>
+<li>[extras] - contains extras</li>
+<li>[extras]/[keystore]</li>
+<li>[extras]/[keystore]/webviewapp.keystore - keystore certificate for signing APK</li>
+<li>[extras]/[keystore]/webviewapp.properties - alias and password for keystore</li>
+<li>[gradle]</li>
+<li>[gradle]/[wrapper] - Gradle Wrapper</li>
+<li>.gitignore - Gitignore file</li>
+<li>build.gradle - parent build script</li>
+<li>gradle.properties - build script properties containing path to keystore</li>
+<li>gradlew - Gradle Wrapper (Unix)</li>
+<li>gradlew.bat - Gradle Wrapper (Windows)</li>
+<li>README.md - readme file</li>
+<li>settings.gradle - build settings containing list of modules</li>
+</ul>
+<p>Java packages:</p>
+<ul>
+<li>com.robotemplates.webviewapp - contains application class and main config class</li>
+<li>com.progress.photos.activity - contains activities representing screens</li>
+<li>com.progress.photos.adapter - contains all adapters</li>
+<li>com.progress.photos.fragment - contains fragments with main application logic</li>
+<li>com.progress.photos.utility - contains utilities</li>
+<li>com.progress.photos.view - contains tools for working with views</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<p>This chapter describes how to configure the project to be ready for publishing. All these steps are very important!</p>
+<h3 id="1-import">1. Import</h3>
+<p>Unzip the package and import/open the project in Android Studio. Choose &quot;Import project&quot; on Quick Start screen and select &quot;webviewapp-x.y.z&quot; directory.</p>
+<h3 id="2-rename-package-name">2. Rename package name</h3>
+<ol>
+<li>Create new package in <em>java</em> directory, e.g. &quot;com.mycompany.myapp&quot;. Right click on <em>app/src/main/java</em> directory -&gt; New -&gt; Package.</li>
+<li>Select all packages and classes in &quot;com.robotemplates.webviewapp&quot; and move (drag) them to the new package.</li>
+<li>Delete the old package &quot;com.robotemplates.webviewapp&quot;.</li>
+<li>Open <em>app/src/main/AndroidManifest.xml</em> and rename the package name. Select package name &quot;com.robotemplates.webviewapp&quot; -&gt; Right click on selected text -&gt; Refactor -&gt; Rename -&gt; enter the new package name, select &quot;Search in comments and strings&quot; option -&gt; Refactor -&gt; Do Refactor.</li>
+<li>Clean the project. Main menu -&gt; Build -&gt; Clean Project.</li>
+<li>Replace all occurrences of &quot;com.robotemplates.webviewapp&quot; for a new package name, e.g. &quot;com.mycompany.myapp&quot;. Right click on <em>app</em> directory -&gt; Replace in Path -&gt; set old and new package names, Case sensitive to true -&gt; Find -&gt; Replace.</li>
+<li>Clean the project again. Main menu -&gt; Build -&gt; Clean Project.</li>
+<li>Synchronize the project. Main menu -&gt; Tools -&gt; Android -&gt; Sync Project with Gradle Files.</li>
+<li>If you see &quot;Activity class does not exist&quot; error, restart Android Studio.</li>
+</ol>
+<h3 id="3-rename-application-name">3. Rename application name</h3>
+<p>Open <em>app/src/main/res/values/strings.xml</em> and change &quot;WebView App&quot; to your own name.</p>
+<h3 id="4-create-launcher-icon">4. Create launcher icon</h3>
+<p>Right click on <em>app/src/main/res</em> directory -&gt; New -&gt; Image Asset -&gt; Asset type Launcher Icons, Resource name &quot;ic_launcher&quot;, create the icon -&gt; Next -&gt; Finish.</p>
+<p>You can also change the icon replacing <em>ic_launcher.png</em> file in <em>mipmap-mdpi</em>, <em>mipmap-hdpi</em>, <em>mipmap-xhdpi</em>, <em>mipmap-xxhdpi</em> directories. See <a href="http://petrnohejl.github.io/Android-Cheatsheet-For-Graphic-Designers/#screen-densities-and-icon-dimensions">Android Cheatsheet for Graphic Designers</a> for correct launcher icon dimensions. Don&#39;t forget to change also the icon for a push notification replacing <em>ic_stat_notify.png</em> file in <em>drawable-mdpi</em>, <em>drawable-hdpi</em>, <em>drawable-xhdpi</em>, <em>drawable-xxhdpi</em> directories.</p>
+<p>Another possibility is to create launcher icons using <a href="http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html">Android Asset Studio</a>.</p>
+<p><strong>Important:</strong> <em>ic_launcher.png</em> is the launcher icon and <em>ic_stat_notify.png</em> is the icon for the push notification.</p>
+<p><strong>Note:</strong> <em>ab_ic_launcher.png</em> is no longer used in a new version of the app with Material design.</p>
+<h3 id="5-choose-color-theme">5. Choose color theme</h3>
+<p>Open <em>app/src/main/AndroidManifest.xml</em> and change value of <code>application.android:theme</code> attribute. There are 10 themes you can use:</p>
+<ul>
+<li>Theme.WebViewApp.Blue</li>
+<li>Theme.WebViewApp.Brown</li>
+<li>Theme.WebViewApp.Gray</li>
+<li>Theme.WebViewApp.Green</li>
+<li>Theme.WebViewApp.Lime</li>
+<li>Theme.WebViewApp.Orange</li>
+<li>Theme.WebViewApp.Purple</li>
+<li>Theme.WebViewApp.Red</li>
+<li>Theme.WebViewApp.Teal</li>
+<li>Theme.WebViewApp.Violet</li>
+</ul>
+<h3 id="6-setup-navigation-and-web-pages">6. Setup navigation and web pages</h3>
+<p>Open <em>app/src/main/res/values/navigation.xml</em>. There are 4 string arrays:</p>
+<ul>
+<li>List of titles in navigation drawer menu.</li>
+<li>List of webview URLs. You can specify URL link to a web page on the Internet or URL link to a local page stored in <em>assets</em> directory. Local page does not require Internet connection. URL to the local page must be in this format: <code>file:///android_asset/example.html</code>.</li>
+<li>List of icons in navigation drawer menu.</li>
+<li>List of share messages. Each webview page can be shared via e-mail, sms, social networks etc. Share button is in the action bar. You can specify a message which gonna be posted. If you don&#39;t want to share the page, keep the item empty.</li>
+</ul>
+<p>You can add/remove/modify menu items as you need. If you want to use local pages, copy HTML files to <em>app/src/main/assets</em> directory and set proper paths in <em>navigation_url_list</em> array. See the path format above.</p>
+<p><strong>Important:</strong> each of these 4 arrays must contain the same number of items.</p>
+<h3 id="7-setup-google-analytics">7. Setup Google Analytics</h3>
+<p>Open <em>app/src/main/res/xml/analytics_app_tracker.xml</em> and change UA code (<em>ga_trackingId</em> parameter) to your own UA code. You can enable/disable Google Analytics in configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em>.</p>
+<h3 id="8-setup-admob">8. Setup AdMob</h3>
+<p>Open <em>app/src/main/res/values/admob.xml</em> and change unit id (<em>admob_unit_id</em> parameter) to your own unit id (banner id). You should also specify your test device id (<em>admob_test_device_id</em> parameter) and use test mode when debugging the app. Requesting test ads is recommended when testing your application so you do not request invalid impressions. You can find your hashed device id in the logcat output by requesting an ad when debugging on your device. You can enable/disable AdMob in configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em>.</p>
+<h3 id="9-setup-push-notifications">9. Setup push notifications</h3>
+<p>Application uses <a href="https://www.parse.com/">Parse</a> for push notifications. You need to create a new Parse account if you don&#39;t have one. Open configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em> and setup <code>PARSE_APPLICATION_ID</code> and <code>PARSE_CLIENT_KEY</code> constants. You can find application id and client key in <a href="https://www.parse.com/">Parse settings</a>. Open Parse admin -&gt; choose your app -&gt; Settings -&gt; Keys -&gt; Application Keys. Then open <em>app/src/main/AndroidManifest.xml</em> and uncomment necessary permissions, service and receivers. There are 2 blocks of commented out code. The first starts with &quot;uses-permission&quot;, the second starts with &quot;service&quot;, so uncomment them.</p>
+<p><strong>Note:</strong> keep the constants in the configuration file empty and don&#39;t uncomment the code in the manifest file if you do not want to use push notifications.</p>
+<p><strong>Tip:</strong> <em>ic_stat_notify.png</em> is an icon for the push notification. You can change it if you want.</p>
+<h3 id="10-create-signing-keystore">10. Create signing keystore</h3>
+<p>You need to create your own keystore to sign an APK file before publishing on Google Play. You can create the keystore via <a href="http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html">keytool utility</a> which is part of Java JDK.</p>
+<ol>
+<li>Run following command: <code>keytool -genkey -v -keystore webviewapp.keystore -alias &lt;your_alias&gt; -keyalg RSA -keysize 2048 -validity 36500</code> where <code>&lt;your_alias&gt;</code> is your alias name. For example your company name or app name. If you are going to publish the app on Google Play, you have to set the validity attribute.</li>
+<li>Copy new <em>webviewapp.keystore</em> file into <em>extras/keystore</em> directory.</li>
+<li>Open <em>extras/keystore/webviewapp.properties</em> and set keystore alias and passwords.</li>
+<li>Done. Remember that <em>webviewapp.keystore</em> and <em>webviewapp.properties</em> are automatically read by Gradle script when creating a release APK via <em>assembleRelease</em> command. Paths to these files are defined in <em>gradle.properties</em>.</li>
+</ol>
+<h2 id="customization">Customization</h2>
+<p>This chapter describes some optional customizations of the app.</p>
+<h3 id="custom-colors-and-icons">Custom colors and icons</h3>
+<p>You can customize colors in <em>app/src/main/res/values/colors.xml</em>.</p>
+<p>There are 30 icons which you can use for navigation drawer menu. If you need to create the icon for navigation drawer, it is recommended to use <a href="http://romannurik.github.io/AndroidAssetStudio/index.html">Android Asset Studio</a>. See <a href="http://petrnohejl.github.io/Android-Cheatsheet-For-Graphic-Designers/#screen-densities-and-icon-dimensions">Android Cheatsheet for Graphic Designers</a> for correct icon dimensions.</p>
+<h3 id="open-links-in-external-browser">Open links in external browser</h3>
+<p>If you click on some link in the webview, web page is opened directly in the webview by default. Pages can be opened in external browser. If you need this behavior, just open configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em> and set <code>OPEN_LINKS_IN_EXTERNAL_BROWSER = true</code>.</p>
+<p>You can also set a rules which links will be opened in external browser and which ones will be loaded in internal webview. Open configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em> and add/remove rules in <code>LINKS_OPENED_IN_EXTERNAL_BROWSER</code> or <code>LINKS_OPENED_IN_INTERNAL_WEBVIEW</code> arrays. If URL link contains the string from the array, it will be opened in external browser/internal webview. These rules have higher priority than <code>OPEN_LINKS_IN_EXTERNAL_BROWSER</code> option. For example &quot;<a href="http://www.example.com/?target=blank">http://www.example.com/?target=blank</a>&quot; will be opened externally and &quot;<a href="http://www.example.com/?target=webview">http://www.example.com/?target=webview</a>&quot; will be opened internally.</p>
+<h3 id="download-manager">Download manager</h3>
+<p>This feature allows to download files from the web into the device. Just click on the download link and the file will be automatically downloaded into DOWNLOAD directory. File URL must have a specific format so download manager can recognize it is a downloadable file - URL must ends with the supported extension (zip, pdf, mp3, avi etc.), e.g. <em><a href="http://www.example.com/path/mediafile.mp3">http://www.example.com/path/mediafile.mp3</a></em> or <em><a href="http://www.example.com/path/mediafile.mp3?arg1=1&amp;arg2=2">http://www.example.com/path/mediafile.mp3?arg1=1&amp;arg2=2</a></em>. You can see progress of downloading in the notification panel. You can modify supported file formats in config file. Just open configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em> and add/remove file types in <code>DOWNLOAD_FILE_TYPES</code> array as you need. Keep this array empty if you don&#39;t want to use download manager.</p>
+<h3 id="intents-in-html">Intents in HTML</h3>
+<p>Application supports <a href="http://developer.android.com/guide/components/intents-filters.html">Android Intents</a>. You can add a special link to your HTML file and you will be able to run appropriate external app to perform some action. For example send an e-mail or call somebody. Following intents are supported (example URI):</p>
+<ul>
+<li>HTTP web page: <a href="http://android.com">http://android.com</a></li>
+<li>HTTPS web page: <a href="https://google.com">https://google.com</a></li>
+<li>E-mail: mailto:someone@example.com?subject=Hello</li>
+<li>Phone call: tel:+0123456789</li>
+<li>SMS: sms:+0123456789</li>
+<li>Map point: geo:50.087474,14.421206</li>
+<li>Map search: geo:0,0?q=Czech+Republic</li>
+</ul>
+<h3 id="video-in-html">Video in HTML</h3>
+<p>Application supports HTML5 video however there is a known bug on Android KitKat which blocks the webview component. See official <a href="https://code.google.com/p/android/issues/detail?id=63754">Android Issue Tracker</a> for more info.</p>
+<h3 id="uploading-files">Uploading files</h3>
+<p>Application supports uploading files however there is a known bug on some Android versions so the upload does not work properly. See official <a href="https://code.google.com/p/android/issues/detail?id=62220">Android Issue Tracker</a> for more info.</p>
+<h2 id="building-publishing">Building &amp; publishing</h2>
+<p>This chapter describes how to build APK with Gradle and prepare app for publishing. Android Studio uses Gradle for building Android applications.</p>
+<p>You don&#39;t need to install Gradle on your system, because there is a <a href="http://www.gradle.org/docs/current/userguide/gradle_wrapper.html">Gradle Wrapper</a>. The wrapper is a batch script on Windows, and a shell script for other operating systems. When you start a Gradle build via the wrapper, Gradle will be automatically downloaded and used to run the build.</p>
+<ol>
+<li>Open the project in Android Studio</li>
+<li>Open configuration file <em>/app/src/main/java/com/robotemplates/webviewapp/WebViewAppConfig.java</em> and set constants as required (see below for more info)</li>
+<li>Open main build script <em>/app/build.gradle</em> and set constants as required (see below for more info)</li>
+<li>Run <code>gradlew assemble</code> in console</li>
+<li>APK should be available in <em>/app/build/outputs/apk</em> directory</li>
+</ol>
+<p><strong>Note:</strong> You will also need a &quot;local.properties&quot; file to set the location of the SDK in the same way that the existing SDK requires, using the &quot;sdk.dir&quot; property. Example of &quot;local.properties&quot; on Windows: <code>sdk.dir=C:\\adt-bundle-windows\\sdk</code>. Alternatively, you can set an environment variable called &quot;ANDROID_HOME&quot;.</p>
+<p><strong>Tip:</strong> Command <code>gradlew assemble</code> builds both - debug and release APK. You can use <code>gradlew assembleDebug</code> to build debug APK. You can use <code>gradlew assembleRelease</code> to build release APK. Debug APK is signed by debug keystore. Release APK is signed by own keystore, stored in <em>/extras/keystore</em> directory.</p>
+<p><strong>Signing process:</strong> Keystore passwords are automatically loaded from property file during building the release APK. Path to this file is defined in &quot;keystore.properties&quot; property in &quot;gradle.properties&quot; file. If this property or the file does not exist, user is asked for passwords explicitly.</p>
+<h3 id="webviewappconfig-java">WebViewAppConfig.java</h3>
+<p>This is the main configuration file. There are some true/false switches. It is very important to correctly set these switches before building the APK.</p>
+<ul>
+<li>LOGS - true for showing logs</li>
+<li>ANALYTICS - true for enabling Google Analytics</li>
+<li>ADMOB - true for enabling AdMob</li>
+</ul>
+<p><strong>Important:</strong> Following configuration should be used for release APK, intended for publishing on Google Play:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> LOGS = <span class="hljs-keyword">false</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> ANALYTICS = <span class="hljs-keyword">true</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> ADMOB = <span class="hljs-keyword">true</span>;
+</code></pre>
+<h3 id="build-gradle">build.gradle</h3>
+<p>This is the main build script and there are 4 important constants for defining version code and version name.</p>
+<ul>
+<li>VERSION_MAJOR</li>
+<li>VERSION_MINOR</li>
+<li>VERSION_PATCH</li>
+<li>VERSION_BUILD</li>
+</ul>
+<p>See <a href="http://developer.android.com/tools/publishing/versioning.html#appversioning">Versioning Your Applications</a> in Android documentation for more info.</p>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><a href="http://developer.android.com/tools/support-library/index.html">Android Support Library v4</a></li>
+<li><a href="https://developer.android.com/reference/android/support/v7/appcompat/package-summary.html">AppCompat</a></li>
+<li><a href="http://developer.android.com/google/play-services/index.html">Google Play Services</a></li>
+<li><a href="https://www.parse.com">Parse</a></li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li>Version 1.0.0<ul>
+<li>Initial release</li>
+</ul>
+</li>
+<li>Version 1.1.0<ul>
+<li>AdMob support</li>
+<li>Configuration for opening links in webview</li>
+</ul>
+</li>
+<li>Version 1.2.0<ul>
+<li>Update Gradle script to be compatible with Android Studio 1.0</li>
+<li>Download manager</li>
+<li>Open links directly in the webview by default</li>
+<li>Show progress bar when loading nested link</li>
+<li>Fix refreshing of the current page</li>
+<li>Fix text color of the HTML select</li>
+<li>Fix Google Play intent</li>
+</ul>
+</li>
+<li>Version 1.3.0<ul>
+<li>Material design</li>
+<li>New color themes</li>
+<li>New set of menu icons</li>
+<li>Rules for opening links in external browser or internal webview</li>
+<li>Support for uploading files</li>
+</ul>
+</li>
+<li>Version 1.4.0<ul>
+<li>Push notifications</li>
+<li>Launcher icon as a mipmap</li>
+<li>Fix empty placeholder</li>
+</ul>
+</li>
+</ul>
+<h2 id="developed-by">Developed by</h2>
+<p><a href="http://robotemplates.com/">Robo Templates</a></p>
+<h2 id="license">License</h2>
+<p><a href="http://codecanyon.net/licenses">Codecanyon licenses</a></p>
+
+</body></html>

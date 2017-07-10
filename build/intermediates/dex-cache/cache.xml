@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0_acb358c67da8cd9f62d5c11ad9b8ab80ed66db14.jar" />
+    </item>
+    <item
+        jar="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/libs/Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/Parse-1.9.1_bf42d350eede58572e17cc68d39323eb57ba40d9.jar" />
+    </item>
+    <item
+        jar="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-6.1.71_9e31222ca733281f36522c139addd66711acae4b.jar" />
+    </item>
+    <item
+        jar="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.0.0_08329bdd949b977b0d72fa0d7d4473d1aaf732db.jar" />
+    </item>
+    <item
+        jar="/Users/alexey/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_0dd8a45ed3a3cae50e2e8697185b837faffe1e33.jar" />
+    </item>
+    <item
+        jar="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.0.0_4871e10b634f2886ec7e4fbd69282457e5889fdf.jar" />
+    </item>
+    <item
+        jar="/Users/alexey/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_e81bff05efbab1ffac9da8a1bb94ed0e4d6682bf.jar" />
+    </item>
+    <item
+        jar="/Volumes/WORK_2/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Volumes/WORK_4/Steve/webviewapp-1.4.0-new(1)/webviewapp-1.4.0-new/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0_8205f1adb1cd709837fded6158e7a9dce415c557.jar" />
+    </item>
+
+</items>
